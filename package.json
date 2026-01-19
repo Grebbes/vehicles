@@ -1,0 +1,16 @@
+{
+  "name": "arbets-metodik-utv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npx json-server vehicles.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
