@@ -24,6 +24,10 @@ document;
 addEventListener("DOMContentLoaded", initApp);
 
 /* 
+
+   SAKER SOM SKA GÖRAS TILL ONSDAG!!!
+
+
 1. utöka json filen med 
    modelYear,
    mileage
