@@ -22,3 +22,18 @@ const loadvehicles = async () => {
 
 document;
 addEventListener("DOMContentLoaded", initApp);
+
+/* 
+1. utöka json filen med 
+   modelYear,
+   mileage
+
+2. uppdatera app.js
+   skriv ut i console fönstret alla egenskapen
+
+3. skapa en visualeisering i index.html som visar samma inmatning
+
+4. pusha till github
+
+
+*/
