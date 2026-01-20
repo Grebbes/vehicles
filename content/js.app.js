@@ -1,7 +1,7 @@
 const initApp = async () => {
   console.log("init app is running");
-  const data = await loadvehicles();
-  showCars(data);
+  const vehiclesData = await loadvehicles();
+  showCars(vehiclesData);
 };
 
 const loadvehicles = async () => {
