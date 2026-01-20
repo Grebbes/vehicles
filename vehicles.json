@@ -3,13 +3,17 @@
     {
       "id": 1,
       "manufacturer": "Volvo",
-      "model": "v60"
+      "model": "v60",
+      "modelYear": "1999",
+      "mileage": "5000km"
     },
 
     {
       "id": 2,
       "manufacturer": "Kia",
-      "model": "ev6"
+      "model": "ev6",
+      "modelYear": "2005",
+      "mileage": "9000km"
     }
   ]
 }
