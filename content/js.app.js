@@ -1,6 +1,7 @@
-const initApp = () => {
+const initApp = async () => {
   console.log("init app is running");
-  loadvehicles();
+  const data = await loadvehicles();
+  showCars(data);
 };
 
 const loadvehicles = async () => {
@@ -19,10 +20,27 @@ const loadvehicles = async () => {
         Vehicle.mileage,
       );
     });
-
-    return;
+    return result;
   }
   console.error("hoppsan det gick lite fel");
+};
+
+const showCars = (vehiclesData) => {
+  const button = document.getElementById("displaybutton");
+  const display = document.querySelector(".cars");
+
+  button.addEventListener("click", () => {
+    if (display.innerHTML === "") {
+      const result = vehiclesData;
+      result.forEach(({ manufacturer, model, modelYear, mileage }) => {
+        display.innerHTML += `<strong class="carsinfo">Car:</strong> <p class="carsinfo">${manufacturer}, ${model}, ${modelYear}, ${mileage}</p><br/>`;
+        button.innerHTML = "Hide Cars";
+      });
+    } else {
+      display.innerHTML = "";
+      button.innerHTML = "Display Cars";
+    }
+  });
 };
 
 document;
